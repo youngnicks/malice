@@ -5,7 +5,6 @@ import (
 	"strings"
 
 	log "github.com/Sirupsen/logrus"
-	"github.com/malice-plugins/pkgs/database/elasticsearch"
 	"github.com/malice-plugins/pkgs/utils"
 	"github.com/maliceio/malice/config"
 	"github.com/maliceio/malice/malice/database"
@@ -13,6 +12,7 @@ import (
 	"github.com/maliceio/malice/malice/docker/client/container"
 	"github.com/maliceio/malice/plugins"
 	"github.com/pkg/errors"
+	"github.com/youngnicks/pkgs/database/elasticsearch"
 )
 
 func cmdLookUp(hash string, logs bool) error {
