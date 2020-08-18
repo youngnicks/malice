@@ -55,6 +55,8 @@ func cmdLookUp(hash string, logs bool) error {
 		}
 	}
 
+	es.Plugins = database.GetPluginsByCategory()
+
 	/////////////////////////////
 	// Write hash to the Database
 	resp, err := es.StoreHash(hash)
